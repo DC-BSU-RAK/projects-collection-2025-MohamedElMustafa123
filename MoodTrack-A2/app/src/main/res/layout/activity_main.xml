@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <Button
+        android:id="@+id/generateSuggestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF6F61"
+        android:text="Generate Suggestion"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <ImageButton
+        android:id="@+id/chillButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/chill1" />
+
+    <ImageButton
+        android:id="@+id/sadButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336"
+        app:srcCompat="@drawable/anxious1" />
+
+    <TextView
+        android:id="@+id/moodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOODY"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/moodyButton"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/moodyButton"
+        app:layout_constraintTop_toBottomOf="@+id/moodyButton"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/chillText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHILL"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/sadButton"
+        app:layout_constraintEnd_toEndOf="@+id/chillButton"
+        app:layout_constraintStart_toStartOf="@+id/chillButton"
+        app:layout_constraintTop_toBottomOf="@+id/chillButton"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <TextView
+        android:id="@+id/sadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAD"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sadButton"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/sadButton"
+        app:layout_constraintTop_toBottomOf="@+id/sadButton"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/energeticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENERGETIC"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/moodyButton"
+        app:layout_constraintEnd_toEndOf="@+id/energeticButton"
+        app:layout_constraintStart_toStartOf="@+id/energeticButton"
+        app:layout_constraintTop_toBottomOf="@+id/energeticButton"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <ImageButton
+        android:id="@+id/happyButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/happy1" />
+
+    <TextView
+        android:id="@+id/happyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAPPY"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/sadButton"
+        app:layout_constraintEnd_toEndOf="@+id/happyButton"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/happyButton"
+        app:layout_constraintTop_toBottomOf="@+id/happyButton"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <ImageButton
+        android:id="@+id/moodyButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336"
+        app:srcCompat="@drawable/moody1" />
+
+    <ImageButton
+        android:id="@+id/energeticButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/energetic1" />
+
+    <TextView
+        android:id="@+id/whatsMoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cloudypeaches"
+        android:text="What's your mood today?"
+        android:textColor="#FFF8F0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/chillButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageButton
+        android:id="@+id/afternoonButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/afternoon" />
+
+    <ImageButton
+        android:id="@+id/eveningButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/evening" />
+
+    <ImageButton
+        android:id="@+id/morningButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/morning" />
+
+    <TextView
+        android:id="@+id/eveningText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVENING"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/latenightButton"
+        app:layout_constraintEnd_toEndOf="@+id/eveningButton"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/eveningButton"
+        app:layout_constraintTop_toBottomOf="@+id/eveningButton"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <TextView
+        android:id="@+id/morningText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MORNING"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/nightButton"
+        app:layout_constraintEnd_toEndOf="@+id/morningButton"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="@+id/morningButton"
+        app:layout_constraintTop_toBottomOf="@+id/morningButton"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <ImageButton
+        android:id="@+id/latenightButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851"
+        app:srcCompat="@drawable/latenight" />
+
+    <ImageButton
+        android:id="@+id/nightButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851"
+        app:srcCompat="@drawable/night" />
+
+    <TextView
+        android:id="@+id/lateNightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LATENIGHT"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/generateSuggestionButton"
+        app:layout_constraintEnd_toEndOf="@+id/latenightButton"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/latenightButton"
+        app:layout_constraintTop_toBottomOf="@+id/latenightButton"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/timeOfDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME OF DAY"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/afternoonButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moodyButton"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/nightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIGHT"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/generateSuggestionButton"
+        app:layout_constraintEnd_toEndOf="@+id/nightButton"
+        app:layout_constraintStart_toStartOf="@+id/nightButton"
+        app:layout_constraintTop_toBottomOf="@+id/nightButton"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/afternoonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOON"
+        android:fontFamily="@font/cloudypeaches"
+        android:textColor="#FFF8F0"
+        app:layout_constraintBottom_toTopOf="@+id/nightButton"
+        app:layout_constraintEnd_toEndOf="@+id/afternoonButton"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/afternoonButton"
+        app:layout_constraintTop_toBottomOf="@+id/afternoonButton"
+        app:layout_constraintVertical_bias="0.241"/>
+
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:tint="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="@+id/whatsMoodText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/whatsMoodText"
+        app:layout_constraintTop_toTopOf="@+id/whatsMoodText"
+        app:srcCompat="@drawable/informationicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

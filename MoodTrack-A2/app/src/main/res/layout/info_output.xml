@@ -1,0 +1,17 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to MoodTrack!\n\n1. select your mood.\n2. select time of day.\n3. Tap 'Generate'.\n\n Your genre that fits your vibe will appear!"
+        android:textColor="#FF6F61"
+        android:fontFamily="@font/cloudypeaches"
+        android:textSize="16sp"
+        android:lineSpacingExtra="6dp"
+        android:gravity="center" />
+</ScrollView>
